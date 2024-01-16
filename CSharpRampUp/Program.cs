@@ -61,7 +61,7 @@ namespace RampUp2
             Console.WriteLine("Age of Student 10: ");
             int a10 = Convert.ToInt32(Console.ReadLine());
 
-            int average = (a1 + a2 + a3 + a4 + a5 + a6 + a7 + a8 + a9 + a10);
+            double average = Convert.ToDouble(a1 + a2 + a3 + a4 + a5 + a6 + a7 + a8 + a9 + a10);
             Console.WriteLine("The average age of the student is: " + average / 10);
 
             Console.WriteLine("========================================");
