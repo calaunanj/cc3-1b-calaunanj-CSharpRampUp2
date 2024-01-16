@@ -97,6 +97,7 @@ namespace RampUp2
 
             Console.WriteLine("========================================");
 
+            //Ascending
 
             Console.Write("Enter a number: ");
             int count = Convert.ToInt32(Console.ReadLine());
@@ -118,6 +119,8 @@ namespace RampUp2
 
             Console.WriteLine("========================================");
 
+            //plus
+
             Console.Write("Enter a number: ");
             int count1 = Convert.ToInt32(Console.ReadLine());
             if (count1 <= 0)
@@ -136,6 +139,8 @@ namespace RampUp2
             }
 
             Console.WriteLine("========================================");
+
+            //Descending
 
             Console.Write("Enter a number: ");
             int count2 = Convert.ToInt32(Console.ReadLine());
