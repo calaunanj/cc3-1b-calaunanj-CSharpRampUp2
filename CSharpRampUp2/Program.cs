@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics.Metrics;
 namespace RampUp2
 {
     class Program
@@ -14,7 +15,7 @@ namespace RampUp2
 
             Console.WriteLine("Weight in Kg: " + kg.ToString("F2") + "kg");
 
-            Console.WriteLine("====================");
+            Console.WriteLine("========================================");
             //miles to kilometers
 
             Console.WriteLine("Length in Miles: ");
@@ -24,7 +25,7 @@ namespace RampUp2
 
             Console.WriteLine("Length in Kilometers: " + km.ToString("F2") + "km");
 
-            Console.WriteLine("====================");
+            Console.WriteLine("========================================");
 
             //fahrenheit to celsius
 
@@ -35,7 +36,7 @@ namespace RampUp2
 
             Console.WriteLine("Temperature in Celsius: " + C.ToString("F2") + "Celsius");
 
-            Console.WriteLine("====================");
+            Console.WriteLine("========================================");
 
             //Average age 
 
@@ -63,7 +64,7 @@ namespace RampUp2
             int average = (a1 + a2 + a3 + a4 + a5 + a6 + a7 + a8 + a9 + a10);
             Console.WriteLine("The average age of the student is: " + average / 10);
 
-            Console.WriteLine("====================");
+            Console.WriteLine("========================================");
 
             String character0 = "Jinx";
             String character1 = "Vi";
@@ -94,11 +95,68 @@ namespace RampUp2
                    character0 + " pulls the pin in her " + equipment1 + ". Realization hits " + character3 + ", but a bit too late. " +
                   "With this explosion,\nthe fight results in a draw.");
 
+            Console.WriteLine("========================================");
 
+            
+            Console.Write("Enter a number: ");
+            int count = Convert.ToInt32(Console.ReadLine());
+            if (count <= 0)
+            {
+                Console.WriteLine("Invalid input");
+            }
+            else
+            {
+                for (int i = 1; i <= count; i++)
+                {
+                    for (int j = 1; j <= i; j++)
+                    {
+                        Console.Write(j + " ");
+                    }
+                    Console.WriteLine("");
+                }
+            }
 
+            Console.WriteLine("========================================");
 
+            Console.Write("Enter a number: ");
+            int count1 = Convert.ToInt32(Console.ReadLine());
+            if (count1 <= 0) 
+            {
+                Console.Write("Invalid input");
+            }
+            else
+            {
+                int output = 0;
+                for(int i = 1; i <= count1; i++)
+                {
+                    output += i;
+                }
+                Console.WriteLine("The input is: " + count1);
+                Console.WriteLine("The output is: " + output);
+            }
+
+            Console.WriteLine("========================================");
+
+            Console.Write("Enter a number: ");
+            int count2 = Convert.ToInt32(Console.ReadLine());
+            if (count2 <= 0)
+            {
+                Console.Write("Invalid input");
+            }
+            else
+            {
+                for(int i = count2; i > 0 ; i--)
+                {
+                    for(int j = 1; j <= i ;j++)
+                    {
+                        Console.Write(j+" ");
+                    }
+                    Console.WriteLine();
+                } 
+            }
 
             Console.ReadKey();
-        }
+        }   
+
     }
-}
+}   
